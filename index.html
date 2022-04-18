@@ -8,6 +8,8 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
 
+  <link rel="stylesheet" href="style.css">
+
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,6 +17,35 @@
   </style>
 </head>
 <body>
+
+  <main>
+    <div class="inner">
+      <!-- Front card -->
+      <div class="card">
+        <div class="card__star">
+          <img src="./images/icon-star.svg" alt="Star icon" class="card__star--img">
+        </div>
+        <h1 class="card__title">How did we do?</h1>
+        <p class="card__para">Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+        <ul class="card__ratings">
+          <li class="card__ratings--item">1</li>
+          <li class="card__ratings--item">2</li>
+          <li class="card__ratings--item">3</li>
+          <li class="card__ratings--item">4</li>
+          <li class="card__ratings--item">5</li>
+        </ul>
+        <a href="#" class="card__submit">submit</a>
+      </div>
+
+      <!-- Card Back -->
+      <div class="back__card">
+        <img src="./images/illustration-thank-you.svg" alt="Thankyou image" class="back__card--img">
+        <h2 class="back__card__ratings">You selected 4 out of 5</h2>
+        <h3 class="back__card__title">Thank you!</h3>
+        <p class="back__card__para">We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!</p>
+      </div>
+    </div>
+  </main>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
