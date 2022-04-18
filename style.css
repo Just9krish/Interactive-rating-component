@@ -1,1 +1,149 @@
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+
+
+:root {
+    /* Colors */
+    /* Primary */
+
+    --Orange: hsl(25, 97%, 53%);
+
+    /* Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Light-Grey: hsl(217, 12%, 63%);
+    --Medium-Grey: hsl(214, 19%, 25%);
+    --Dark-Blue: hsl(213, 19%, 18%);
+    --Very-Dark-Blue: hsl(216, 12%, 8%);
+
+    /* Fonts */
+    --font-size: 0.9rem;
+    --font-family: 'Overpass', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+::after, 
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--Very-Dark-Blue);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: transparent;
+    width: 26rem;
+    height: 26rem;
+    padding:  0 0.5em;
+}
+
+.inner {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.card {
+    background-color: var(--Dark-Blue);
+    padding: 2em;
+    border-radius: 2em;
+    max-width: 26rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1.3em;
+}
+
+
+.card__star {
+    background: var(--Medium-Grey);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5em;
+}
+
+.card__title {
+    color: var(--White);
+    font-weight: 700;
+}
+
+.card__para {
+    color: var(--Light-Grey);
+    font-size: var(--font-size);
+    font-weight: 400;
+    text-align: start;
+}
+
+.card__ratings {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card__ratings--item {
+    color: var(--Light-Grey);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.card__ratings--item:hover {
+    color: var(--White);
+    background-color: var(--Orange);
+}
+
+.card__submit {
+    text-decoration: none;
+    background-color: var(--Orange);
+    border-radius: 1.5em;
+    font-weight: 700;
+    padding: 0.8em 0.5em;
+    color: var(--White);
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.card__submit:hover {
+    color: var(--Orange);
+    background: var(--White);
+}
+
+.back__card {
+    display: flex;
+    align-items: center;
+    /* transform: rotateY(180deg); */
+}
+
+.back__card__ratings {
+    color: var(--Orange);
+    background: var(--Medium-Grey);
+    font-weight: 400;
+    text-align: center;
+    border-radius: 0.9em;
+    padding: 0.2em 0.9em;
+    font-size: var(--font-size);
+}
+
+.back__card__title {
+    color: var(--White);
+}
+
+.back__card__para {
+    color: var(--Light-Grey);
+    text-align: center;
+}
