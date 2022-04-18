@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Click here]()
+- Solution URL: [Click here](https://www.frontendmentor.io/solutions/interactive-rating-component-Hyh1TMjVq)
 - Live Site URL: [Click here](https://interactive-rating-component-by-just9krish.netlify.app/)
 
 ## My process
