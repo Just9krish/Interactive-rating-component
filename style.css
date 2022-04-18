@@ -33,11 +33,13 @@
 }
 
 body {
+    font-family: var(--font-family);
     background-color: var(--Very-Dark-Blue);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    perspective: 1000px;
 }
 
 main {
@@ -51,6 +53,8 @@ main {
     width: 100%;
     height: 100%;
     text-align: center;
+    transition: all ease 0.8s;
+    transform-style: preserve-3d;
 }
 
 .card {
@@ -63,8 +67,10 @@ main {
     justify-content: center;
     align-items: flex-start;
     gap: 1.3em;
+    transition: all ease 0.8s;
+    transform-style: preserve-3d;
+    perspective: 1000px;
 }
-
 
 .card__star {
     background: var(--Medium-Grey);
@@ -100,9 +106,15 @@ main {
     color: var(--Light-Grey);
     font-weight: 700;
     cursor: pointer;
+    transition: all 0.4s ease;
 }
 
 .card__ratings--item:hover {
+    color: var(--White);
+    background-color: var(--Light-Grey);
+}
+
+.active {
     color: var(--White);
     background-color: var(--Orange);
 }
@@ -116,6 +128,7 @@ main {
     color: var(--White);
     width: 100%;
     text-transform: uppercase;
+    transition: all 0.4s ease;
 }
 
 .card__submit:hover {
@@ -123,10 +136,18 @@ main {
     background: var(--White);
 }
 
+.card,
+.card__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
 .back__card {
     display: flex;
     align-items: center;
-    /* transform: rotateY(180deg); */
+    transform: rotateY(180deg);
 }
 
 .back__card__ratings {
